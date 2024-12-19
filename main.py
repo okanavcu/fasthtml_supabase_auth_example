@@ -1,51 +1,63 @@
 from fasthtml import common as fh
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 from components import auth
 
-app, rt = fh.fast_app(before=auth.bware)
+hdrs = [
+    fh.Html({"data-theme":"cupcake"}, lang='en'),
+    fh.Link(href='https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css', rel='stylesheet'),
+    fh.Script(src='https://cdn.tailwindcss.com')
+]
+
+app, rt = fh.fast_app(before=auth.bware,pico=False,hdrs=hdrs)
+
+async def info(req):
+    return await auth.users_info(req=req)
+
 
 
 @rt("/login")
-def get():
-    return auth.login_get()
+async def get():
+    return await auth.login_get()
 
 
 @rt("/login")
-def post(login: auth.Login, sess):
-    return auth.login_post(login, sess)
+async def post(login: auth.Login, sess, req):
+    return await auth.login_post(login, sess, req)
 
 
 @rt("/logout")
-def logout(sess):
-    return auth.logout(sess)
+async def logout(sess,req):
+    return await auth.logout(sess,req=req)
 
 
 @rt("/protected")
-def protected(auth):
-    print(f"Accessing protected page. Auth: {auth}")
+async def protected(req):
     return fh.Titled(
         "Protected Page",
-        fh.P(f"Welcome, {auth}!"),
         fh.A("Back", href="/"),
         fh.P(),
         fh.A("Logout", href="/logout"),
+        fh.Div(await info(req=req)),
     )
 
 
 @rt("/")
-def home(sess):
-    if auth.is_authenticated(sess):
-        user = sess["user"]
-        print(f"User: {user}")
+async def home(sess, req):
+    if await auth.is_authenticated(sess):
         return fh.Titled(
             "Dashboard",
-            fh.P(f"Welcome, {user}!"),
             fh.P("You are logged in. View a protected page below."),
             fh.A("Protected Page", href="/protected"),
             fh.P(),
             fh.P("Logout here:"),
             fh.A("Logout", href="/logout"),
-        )
+            fh.Div(await auth.veri(sess,req))
+        )   
 
     else:
         return fh.Titled(

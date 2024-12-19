@@ -1,2 +1,3 @@
 python-fasthtml
 supabase
+python-dotenv

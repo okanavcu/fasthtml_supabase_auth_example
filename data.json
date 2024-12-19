@@ -1,0 +1,99 @@
+{
+    "user": {
+      "id": "ad0365ea-ae95-4935-9c62-c959711be6fa",
+      "app_metadata": {
+        "provider": "email",
+        "providers": ["email"]
+      },
+      "user_metadata": {},
+      "aud": "authenticated",
+      "confirmation_sent_at": null,
+      "recovery_sent_at": null,
+      "email_change_sent_at": null,
+      "new_email": null,
+      "new_phone": null,
+      "invited_at": null,
+      "action_link": null,
+      "email": "okanavcu5454@gmail.com",
+      "phone": "",
+      "created_at": "2024-12-18T20:13:35.977891Z",
+      "confirmed_at": "2024-12-18T20:13:35.982813Z",
+      "email_confirmed_at": "2024-12-18T20:13:35.982813Z",
+      "phone_confirmed_at": null,
+      "last_sign_in_at": "2024-12-18T20:14:54.265655Z",
+      "role": "authenticated",
+      "updated_at": "2024-12-18T20:14:54.266900Z",
+      "identities": [
+        {
+          "id": "ad0365ea-ae95-4935-9c62-c959711be6fa",
+          "identity_id": "e7b5ce90-e824-45ef-b8fa-8197c9d4c8ae",
+          "user_id": "ad0365ea-ae95-4935-9c62-c959711be6fa",
+          "identity_data": {
+            "email": "okanavcu5454@gmail.com",
+            "email_verified": false,
+            "phone_verified": false,
+            "sub": "ad0365ea-ae95-4935-9c62-c959711be6fa"
+          },
+          "provider": "email",
+          "created_at": "2024-12-18T20:13:35.980997Z",
+          "last_sign_in_at": "2024-12-18T20:13:35.980956Z",
+          "updated_at": "2024-12-18T20:13:35.980997Z"
+        }
+      ],
+      "is_anonymous": false,
+      "factors": null
+    },
+    "session": {
+      "provider_token": null,
+      "provider_refresh_token": null,
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZDAzNjVlYS1hZTk1LTQ5MzUtOWM2Mi1jOTU5NzExYmU2ZmEiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzM0NTU2NDk0LCJpYXQiOjE3MzQ1NTI4OTQsImVtYWlsIjoib2thbmF2Y3U1NDU0QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnt9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzM0NTUyODk0fV0sInNlc3Npb25faWQiOiI4YjY4ZGIwMS05YTQwLTQzYmUtOTlmZi01ODNmOTA0YmIxMDYiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.gNgBvXWYZGkSSbG73utcCFpjenIu0IlLUv6Aahi5Pok",
+      "refresh_token": "yQAaY4fPI6JMxakwiajt8w",
+      "expires_in": 3600,
+      "expires_at": 1734556494,
+      "token_type": "bearer",
+      "user": {
+        "id": "ad0365ea-ae95-4935-9c62-c959711be6fa",
+        "app_metadata": {
+          "provider": "email",
+          "providers": ["email"]
+        },
+        "user_metadata": {},
+        "aud": "authenticated",
+        "confirmation_sent_at": null,
+        "recovery_sent_at": null,
+        "email_change_sent_at": null,
+        "new_email": null,
+        "new_phone": null,
+        "invited_at": null,
+        "action_link": null,
+        "email": "okanavcu5454@gmail.com",
+        "phone": "",
+        "created_at": "2024-12-18T20:13:35.977891Z",
+        "confirmed_at": "2024-12-18T20:13:35.982813Z",
+        "email_confirmed_at": "2024-12-18T20:13:35.982813Z",
+        "phone_confirmed_at": null,
+        "last_sign_in_at": "2024-12-18T20:14:54.265655Z",
+        "role": "authenticated",
+        "updated_at": "2024-12-18T20:14:54.266900Z",
+        "identities": [
+          {
+            "id": "ad0365ea-ae95-4935-9c62-c959711be6fa",
+            "identity_id": "e7b5ce90-e824-45ef-b8fa-8197c9d4c8ae",
+            "user_id": "ad0365ea-ae95-4935-9c62-c959711be6fa",
+            "identity_data": {
+              "email": "okanavcu5454@gmail.com",
+              "email_verified": false,
+              "phone_verified": false,
+              "sub": "ad0365ea-ae95-4935-9c62-c959711be6fa"
+            },
+            "provider": "email",
+            "created_at": "2024-12-18T20:13:35.980997Z",
+            "last_sign_in_at": "2024-12-18T20:13:35.980956Z",
+            "updated_at": "2024-12-18T20:13:35.980997Z"
+          }
+        ],
+        "is_anonymous": false,
+        "factors": null
+      }
+    }
+  }
